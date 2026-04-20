@@ -1,0 +1,9 @@
+{
+  "id": "obsidian-r2-uploader",
+  "name": "R2 Image Uploader",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "粘贴图片自动上传到 Cloudflare R2，支持图片管理、重命名、批量替换链接",
+  "author": "iFluxArt",
+  "isDesktopOnly": false
+}
