@@ -31,15 +31,15 @@
 
 打开 Obsidian 设置 → R2 Image Uploader，填入以下配置：
 
-| 字段 | 说明 | 示例 |
-|------|------|------|
-| Account ID | Cloudflare 账户 ID | `3792fd7e...` |
-| Access Key ID | R2 S3 Access Key（上传用） | `d9c4bc01...` |
-| Secret Access Key | R2 S3 Secret Key（上传用） | `f796b8...` |
-| Cloudflare API Token | API Token（列表/删除用） | `cfut_...` |
-| Bucket | R2 存储桶名称 | `blog` |
-| Public URL | 图片公开访问域名 | `https://img.example.com` |
-| 路径前缀 | 上传路径前缀 | `images` |
+| 设置项 | Cloudflare 名称 | 说明 | 示例 |
+|--------|----------------|------|------|
+| Account ID | Account ID | Cloudflare 账户 ID，仪表盘右上角可复制 | `3792fd7e...` |
+| 访问密钥 ID | 访问密钥 ID | R2 S3 Access Key（上传用） | `d9c4bc01...` |
+| 机密访问密钥 | 机密访问密钥 | R2 S3 Secret Key（上传用） | `f796b8...` |
+| 令牌值 | 令牌值 | API Token（列表/删除用） | `cfut_...` |
+| 存储桶名称 | 存储桶名称 | R2 存储桶名称 | `blog` |
+| 自定义域 | 自定义域 | 图片公开访问域名 | `https://img.example.com` |
+| 存储桶目录 | 存储桶目录 | 上传路径前缀，留空则传到根目录 | `images` |
 
 ### 获取凭证
 

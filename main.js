@@ -459,13 +459,13 @@ class R2SettingsTab extends PluginSettingTab {
     containerEl.createEl('h2', { text: 'Cloudflare R2 配置' });
 
     const fields = [
-      { key: 'accountId', name: 'Account ID', desc: 'Cloudflare 账户 ID', ph: '3792fd7e...' },
-      { key: 'accessKeyId', name: 'Access Key ID', desc: 'R2 S3 Access Key（上传用）', ph: 'R2 Access Key' },
-      { key: 'secretAccessKey', name: 'Secret Access Key', desc: 'R2 S3 Secret Key（上传用）', ph: 'R2 Secret Key', pw: true },
-      { key: 'cloudflareToken', name: 'Cloudflare API Token', desc: 'API Token（列表/删除用）', ph: 'cfut_...', pw: true },
-      { key: 'bucketName', name: 'Bucket', desc: 'R2 存储桶名称', ph: 'blog' },
-      { key: 'publicUrl', name: 'Public URL', desc: '图片公开访问域名', ph: 'https://bk.iflux.art' },
-      { key: 'imagePrefix', name: '路径前缀', desc: '上传路径前缀', ph: 'blog' },
+      { key: 'accountId', name: 'Account ID', desc: 'Cloudflare 仪表盘右上角可复制', ph: '3792fd7e...' },
+      { key: 'accessKeyId', name: '访问密钥 ID', desc: 'R2 → 管理 R2 API 令牌 → 创建 S3 凭证', ph: 'd9c4bc01...' },
+      { key: 'secretAccessKey', name: '机密访问密钥', desc: '创建 S3 凭证后显示的 Secret Key', ph: 'f796b8...', pw: true },
+      { key: 'cloudflareToken', name: '令牌值', desc: '个人资料 → API 令牌 → 创建自定义令牌（R2 Storage Edit）', ph: 'cfut_...', pw: true },
+      { key: 'bucketName', name: '存储桶名称', desc: 'R2 → 存储桶列表中的名称', ph: 'blog' },
+      { key: 'publicUrl', name: '自定义域', desc: 'R2 → 存储桶 → 设置 → 公开访问 → 连接域', ph: 'https://img.example.com' },
+      { key: 'imagePrefix', name: '存储桶目录', desc: '留空则上传到根目录', ph: 'images' },
     ];
 
     for (const f of fields) {
