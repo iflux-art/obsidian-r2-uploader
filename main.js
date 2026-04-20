@@ -109,7 +109,7 @@ module.exports = class R2Uploader extends Plugin {
 
   async upload(file, name, ext) {
     const { accountId, cloudflareToken, bucketName, publicUrl, imagePrefix } = this.settings;
-    const key = `${imagePrefix}/${name}.${ext}`;
+    const key = imagePrefix ? `${imagePrefix}/${name}.${ext}` : `${name}.${ext}`;
     const url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/r2/buckets/${bucketName}/objects/${encodeURIComponent(key)}`;
     await requestUrl({
       url,
@@ -130,7 +130,7 @@ module.exports = class R2Uploader extends Plugin {
   async listImages(cursor = '') {
     const { accountId, cloudflareToken, bucketName, imagePrefix } = this.settings;
     let url = `https://api.cloudflare.com/client/v4/accounts/${accountId}/r2/buckets/${bucketName}/objects`;
-    url += `?prefix=${encodeURIComponent(imagePrefix + '/')}&limit=100`;
+    url += `?prefix=${encodeURIComponent(imagePrefix ? imagePrefix + '/' : '')}&limit=100`;
     if (cursor) url += `&cursor=${encodeURIComponent(cursor)}`;
 
     const res = await requestUrl({ url, headers: { Authorization: `Bearer ${cloudflareToken}` } });
