@@ -4,10 +4,10 @@
 	"description": "粘贴图片自动上传到 Cloudflare R2，支持图片管理、重命名、批量替换链接",
 	"main": "main.js",
 	"scripts": {
-		"dev": "node esbuild.config.mjs --watch",
-		"build": "node esbuild.config.mjs",
-		"lint": "biome check .",
-		"lint:fix": "biome check --write .",
+		"dev": "node esbuild.config.mjs",
+		"build": "node esbuild.config.mjs production",
+		"lint": "biome check src/",
+		"lint:fix": "biome check --write src/",
 		"format": "biome format --write ."
 	},
 	"keywords": [
