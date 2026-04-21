@@ -1,0 +1,28 @@
+{
+	"name": "obsidian-r2-uploader",
+	"version": "2.0.0",
+	"description": "粘贴图片自动上传到 Cloudflare R2，支持图片管理、重命名、批量替换链接",
+	"main": "main.js",
+	"scripts": {
+		"dev": "node esbuild.config.mjs --watch",
+		"build": "node esbuild.config.mjs",
+		"lint": "biome check .",
+		"lint:fix": "biome check --write .",
+		"format": "biome format --write ."
+	},
+	"keywords": [
+		"obsidian",
+		"obsidian-plugin",
+		"cloudflare",
+		"r2",
+		"image-uploader"
+	],
+	"author": "iFluxArt",
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.0",
+		"esbuild": "^0.21.5",
+		"obsidian": "^1.6.6",
+		"typescript": "^5.5.3"
+	}
+}

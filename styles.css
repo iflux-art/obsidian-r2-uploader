@@ -3,169 +3,169 @@
 /* ==================== 图片管理面板 ==================== */
 
 .r2-manager .r2-manager-list {
-  max-height: 65vh;
-  overflow-y: auto;
-  margin-top: 1rem;
-  padding-right: 4px;
+	max-height: 65vh;
+	overflow-y: auto;
+	margin-top: 1rem;
+	padding-right: 4px;
 }
 
 .r2-manager .r2-manager-list::-webkit-scrollbar {
-  width: 6px;
+	width: 6px;
 }
 
 .r2-manager .r2-manager-list::-webkit-scrollbar-thumb {
-  background: var(--background-modifier-border);
-  border-radius: 3px;
+	background: var(--background-modifier-border);
+	border-radius: 3px;
 }
 
 /* 图片卡片 */
 .r2-manager .r2-image-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  border-radius: 8px;
-  margin-bottom: 6px;
-  border: 1px solid transparent;
-  transition: all 0.15s ease;
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 10px 12px;
+	border-radius: 8px;
+	margin-bottom: 6px;
+	border: 1px solid transparent;
+	transition: all 0.15s ease;
 }
 
 .r2-manager .r2-image-item:hover {
-  background: var(--background-secondary);
-  border-color: var(--background-modifier-border);
+	background: var(--background-secondary);
+	border-color: var(--background-modifier-border);
 }
 
 /* 预览图 */
 .r2-manager .r2-preview {
-  width: 56px;
-  height: 56px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--background-modifier-border);
-  background: var(--background-secondary);
-  flex-shrink: 0;
+	width: 56px;
+	height: 56px;
+	object-fit: cover;
+	border-radius: 8px;
+	border: 1px solid var(--background-modifier-border);
+	background: var(--background-secondary);
+	flex-shrink: 0;
 }
 
 /* 信息区域 */
 .r2-manager .r2-info {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
 }
 
 .r2-manager .r2-name {
-  font-size: 13px;
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	font-size: 13px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .r2-manager .r2-path {
-  font-size: 11px;
-  color: var(--text-muted);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  opacity: 0.7;
+	font-size: 11px;
+	color: var(--text-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	opacity: 0.7;
 }
 
 .r2-manager .r2-meta {
-  font-size: 11px;
-  color: var(--text-muted);
+	font-size: 11px;
+	color: var(--text-muted);
 }
 
 /* 操作按钮 */
 .r2-manager .r2-actions {
-  display: flex;
-  gap: 4px;
-  flex-shrink: 0;
-  opacity: 0;
-  transition: opacity 0.15s ease;
+	display: flex;
+	gap: 4px;
+	flex-shrink: 0;
+	opacity: 0;
+	transition: opacity 0.15s ease;
 }
 
 .r2-manager .r2-image-item:hover .r2-actions {
-  opacity: 1;
+	opacity: 1;
 }
 
 .r2-manager .r2-btn {
-  width: 28px;
-  height: 28px;
-  padding: 0;
-  font-size: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--background-modifier-border);
-  border-radius: 6px;
-  background: var(--background-primary);
-  cursor: pointer;
-  transition: all 0.15s ease;
+	width: 28px;
+	height: 28px;
+	padding: 0;
+	font-size: 13px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid var(--background-modifier-border);
+	border-radius: 6px;
+	background: var(--background-primary);
+	cursor: pointer;
+	transition: all 0.15s ease;
 }
 
 .r2-manager .r2-btn:hover {
-  background: var(--background-modifier-hover);
-  border-color: var(--interactive-accent);
+	background: var(--background-modifier-hover);
+	border-color: var(--interactive-accent);
 }
 
 .r2-manager .r2-btn-danger:hover {
-  background: rgba(239, 68, 68, 0.1);
-  border-color: rgb(239, 68, 68);
-  color: rgb(239, 68, 68);
+	background: rgba(239, 68, 68, 0.1);
+	border-color: rgb(239, 68, 68);
+	color: rgb(239, 68, 68);
 }
 
 /* 加载更多按钮 */
 .r2-manager .r2-load-more {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  border: 1px dashed var(--background-modifier-border);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 13px;
-  transition: all 0.15s ease;
+	width: 100%;
+	padding: 10px;
+	margin-top: 8px;
+	border: 1px dashed var(--background-modifier-border);
+	border-radius: 8px;
+	background: transparent;
+	color: var(--text-muted);
+	cursor: pointer;
+	font-size: 13px;
+	transition: all 0.15s ease;
 }
 
 .r2-manager .r2-load-more:hover {
-  background: var(--background-secondary);
-  border-color: var(--interactive-accent);
-  color: var(--text-normal);
+	background: var(--background-secondary);
+	border-color: var(--interactive-accent);
+	color: var(--text-normal);
 }
 
 /* 空状态 */
 .r2-manager .r2-loading,
 .r2-manager .r2-empty {
-  text-align: center;
-  padding: 3rem 1rem;
-  color: var(--text-muted);
-  font-size: 14px;
+	text-align: center;
+	padding: 3rem 1rem;
+	color: var(--text-muted);
+	font-size: 14px;
 }
 
 /* ==================== 重命名确认弹窗 ==================== */
 
 .r2-rename-notes {
-  max-height: 150px;
-  overflow-y: auto;
-  margin: 8px 0;
-  padding-left: 20px;
-  font-size: 12px;
-  color: var(--text-muted);
-  list-style: disc;
+	max-height: 150px;
+	overflow-y: auto;
+	margin: 8px 0;
+	padding-left: 20px;
+	font-size: 12px;
+	color: var(--text-muted);
+	list-style: disc;
 }
 
 .r2-rename-notes li {
-  margin: 4px 0;
-  word-break: break-all;
-  line-height: 1.5;
+	margin: 4px 0;
+	word-break: break-all;
+	line-height: 1.5;
 }
 
 .r2-rename-empty {
-  padding: 12px;
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 13px;
+	padding: 12px;
+	text-align: center;
+	color: var(--text-muted);
+	font-size: 13px;
 }
