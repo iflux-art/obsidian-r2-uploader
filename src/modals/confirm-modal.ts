@@ -24,6 +24,7 @@ export class ConfirmModal extends Modal {
 	onOpen() {
 		const { contentEl } = this;
 		contentEl.empty();
+		contentEl.addClass("r2-confirm-modal");
 		contentEl.createEl("h2", { text: "确认重命名" });
 		contentEl.createEl("p", { text: `${this.oldName} → ${this.newName}` });
 

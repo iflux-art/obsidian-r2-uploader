@@ -22,6 +22,7 @@ export class InputModal extends Modal {
 	onOpen() {
 		const { contentEl } = this;
 		contentEl.empty();
+		contentEl.addClass("r2-confirm-modal");
 		contentEl.createEl("h2", { text: this.title });
 
 		new Setting(contentEl).setName("名称").addText((text) => {

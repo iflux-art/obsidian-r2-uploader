@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm lint *)",
+      "Bash(pnpm run *)",
+      "Bash(biome check *)",
+      "Bash(npx biome *)",
+      "Bash(pnpm biome *)",
+      "Bash(npx tsc *)",
+      "Bash(pnpm exec *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(git push *)",
+      "Bash(npm audit *)",
+      "Bash(pnpm audit *)"
+    ]
+  }
+}
